@@ -51,9 +51,7 @@ kWidget.embed({
 "wid": "_2159741",
 "uiconf_id": 37822691,
 "flashvars": {
-{% if downloadopt %}
-"download.plugin": false,
-{% endif %}
+{% if download_option == 'downloaddisable' %}"download.plugin": false,{% endif %}
 "scrubber": {
 "parent": "controlsContainer",
 "minWidth": "100",

@@ -46,9 +46,7 @@ kWidget.embed({
 "entry_id": "{{ entryids[i] }}",
 "flashvars": {
 "streamerType": "auto",
-{% if downloadopt %}
-"download.plugin": false,
-{% endif %}
+{% if download_option == 'downloaddisable' %}"download.plugin": false,{% endif %}
 }
 });
 &amp;lt;/script&amp;gt;
